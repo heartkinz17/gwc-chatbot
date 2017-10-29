@@ -31,13 +31,10 @@ def get_time():
     print('time action')
 
     now = datetime.datetime.now()
-    month = month.now
-    day = day.now
-    year = year.now
     hour = now.hour
     minute = now.minute
     second = now.second
     
 
-    text = "The time is %d/%d/%d, %d:%d:%d:%d" % (month, day, year, hour, minute,second)
+    text = "It's %d:%d:%d:%d" % (hour, minute,second)
     return text
