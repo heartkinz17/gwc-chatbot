@@ -8,6 +8,8 @@ def choose_action(action):
         text = hello()
     elif action == "time":
         text = get_time()
+    elif action == "date":
+        text = get_date()
     else:
         text = "No action matched!"
 
@@ -37,6 +39,7 @@ def get_time():
     
 
     text = "It's %d:%d:%d." % (hour, minute, second)
+ 
     
 def get_date():
     """
