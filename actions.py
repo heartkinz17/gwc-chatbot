@@ -37,4 +37,18 @@ def get_time():
     
 
     text = "It's %d:%d:%d." % (hour, minute, second)
+    
+def get_date():
+    """
+    Tells the user the current date
+    """
+    print('time action')
+
+    now = datetime.datetime.now()
+    month = now.month
+    day = now.day
+    year = now.year
+    
+
+    text = "It's %d/%d/%d." % (month, day, year)
     return text
